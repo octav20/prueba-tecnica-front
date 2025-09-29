@@ -40,3 +40,7 @@ Sigue estos pasos para levantar el proyecto en tu entorno de desarrollo local.
 El front-end estará accesible en la URL que indique la consola (ej. `http://localhost:5173`).
 
 -----
+
+
+Usuario: admin
+Contraseña: admin

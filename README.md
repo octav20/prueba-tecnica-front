@@ -41,6 +41,8 @@ El front-end estará accesible en la URL que indique la consola (ej. `http://loc
 
 
 **Usuario:** admin
+
+
 **Contraseña:** admin
 
 -----

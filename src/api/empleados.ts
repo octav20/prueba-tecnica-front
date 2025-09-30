@@ -12,8 +12,15 @@ export const getEmpleados = async () => {
 };
 
 export const crearEmpleado = async (datosEmpleado: unknown) => {
-  const response = await API.post('/empleados', datosEmpleado);
-  return response.data;
+  try {
+    const response = await API.post('/empleados', datosEmpleado);
+    return response.data;
+  } catch (error) {
+    if (axios.isAxiosError(error)) {
+      throw new Error(error.response?.data.msg || 'Error de conexión');
+    }
+    throw new Error('Error de conexión');
+  }
 };
 
 export const actualizarEmpleado = async (

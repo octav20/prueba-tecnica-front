@@ -15,6 +15,12 @@ const EmpleadosPageComponent = () => {
     console.log(datos);
     try {
       await agregarEmpleado(datos);
+      const modal = document.getElementById(
+        'empleado-modal'
+      ) as HTMLDialogElement | null;
+      if (modal) {
+        modal.close();
+      }
       window.location.reload();
     } catch (error) {
       const errorMessage =

@@ -31,12 +31,6 @@ const EmpleadoModalComponent: React.FC<EmpleadoModalComponentProps> = ({
   const onSubmitRHF = (data: any) => {
     onSubmit(data);
     reset();
-    const modal = document.getElementById(
-      'empleado-modal'
-    ) as HTMLDialogElement | null;
-    if (modal) {
-      modal.close();
-    }
   };
 
   const validarEdadMinima = (FechaNacimiento: string | number | Date) => {
